@@ -8,6 +8,7 @@ from analysis.acidentes_por_br import plot_acidentes_por_br
 from analysis.acidentes_por_clima import plot_acidentes_por_clima
 from analysis.causas_acidentes import plot_causas_acidentes
 
+
 def print_students():
     text = "Aluno - Matrícula:\n"
 
@@ -26,6 +27,7 @@ def print_students():
 
     st.write(text)
 
+
 @st.dialog("Sobre o app")
 def about_the_app():
     st.write("Este é um data app para análise de dados de acidentes de trânsito no Brasil.")
@@ -43,6 +45,7 @@ st.write("Este é um data app para análise de dados de acidentes de trânsito n
 st.write("## Dados DataTran 2024")
 
 dados = pd.read_csv('./data/datatran2024_limpo.csv', sep=';')
+st.write(dados)
 
 factory_analise = {
     'Acidentes por unidade federativa': plot_acidentes_por_uf,
