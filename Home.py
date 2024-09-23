@@ -9,7 +9,7 @@ from analysis.acidentes_por_clima import plot_acidentes_por_clima
 from analysis.causas_acidentes import plot_causas_acidentes
 
 def print_students():
-    text = "Alunos - Matrícula:\n"
+    text = "Aluno - Matrícula:\n"
 
     students_names = [
         "Gabriel Vasconcelos Santos - 497688",
@@ -36,8 +36,6 @@ def about_the_app():
 
     print_students()
 
-st.sidebar.markdown("Bem vindo ao data app do Data Tran 2024")
-
 st.write("# Data App - Ciência de Dados | UFC 2024.1")
 
 st.write("Este é um data app para análise de dados de acidentes de trânsito no Brasil. Para mais informações, clique no botão \"Sobre o app\" no menu lateral.")
@@ -53,9 +51,9 @@ factory_analise = {
     'Principais causas de acidentes': plot_causas_acidentes
 }
 
-st.sidebar.markdown("## Escolha no checkbox abaixo qual a análise desejada :smile:")
+st.sidebar.write("## Menu de opções sobre os dados")
 option = st.sidebar.selectbox(
-    'Escolha qual análise deseja',
+    'Escolha qual análise deseja visualizar',
     factory_analise.keys()
 )
 
