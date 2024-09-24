@@ -7,7 +7,7 @@ from analysis.acidentes_por_uf import plot_acidentes_por_uf
 from analysis.acidentes_por_br import plot_acidentes_por_br
 from analysis.acidentes_por_clima import plot_acidentes_por_clima
 from analysis.causas_acidentes import plot_causas_acidentes
-
+from analysis.modelagem import plot_modelagem
 
 def print_students():
     text = "Aluno - Matrícula:\n"
@@ -42,16 +42,14 @@ st.write("# Data App - Ciência de Dados | UFC 2024.1")
 
 st.write("Este é um data app para análise de dados de acidentes de trânsito no Brasil. Para mais informações, clique no botão \"Sobre o app\" no menu lateral.")
 
-st.write("## Dados DataTran 2024")
-
 dados = pd.read_csv('./data/datatran2024_limpo.csv', sep=';')
-st.write(dados)
 
 factory_analise = {
     'Acidentes por unidade federativa': plot_acidentes_por_uf,
     'Acidentes por BR': plot_acidentes_por_br,
     'Acidentes por condição climática': plot_acidentes_por_clima,
-    'Principais causas de acidentes': plot_causas_acidentes
+    'Principais causas de acidentes': plot_causas_acidentes,
+    'Modelagem': plot_modelagem
 }
 
 st.sidebar.write("## Menu de opções sobre os dados")

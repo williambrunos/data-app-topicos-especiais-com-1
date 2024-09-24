@@ -1,0 +1,13 @@
+prediction_feature,model,accuracy
+classificacao_acidente,decision_tree,0.68
+classificacao_acidente,random_forest,0.79
+classificacao_acidente,gradient_boosting,0.79
+classificacao_acidente,xgboost,0.79
+feridos_graves,decision_tree,0.65
+feridos_graves,random_forest,0.77
+feridos_graves,gradient_boosting,0.78
+feridos_graves,xgboost,0.77
+tipo_pista,decision_tree,0.78
+tipo_pista,random_forest,0.84
+tipo_pista,gradient_boosting,0.79
+tipo_pista,xgboost,0.84
