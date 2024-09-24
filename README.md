@@ -1,6 +1,8 @@
 # Data App - Tópicos Especiais em Computação I | UFC 2024.1
 
-Este projeto é destinado a análise dos dados do data tran de 2024.
+Este é um data app para análise de dados de acidentes de trânsito no Brasil.
+
+O dataset utilizado foi o de [Acidentes 2024 (Agrupados por ocorrência)](https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf) disponibilizado pela Polícia Rodoviária Federal no portal de dados abertos do governo.
 
 ## Equipe
 
