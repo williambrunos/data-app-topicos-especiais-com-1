@@ -19,4 +19,6 @@ def plot_acidentes_por_clima(dados):
     st.bar_chart(df_grouped,
                  x='condicao_metereologica',
                  y='Quantidade de acidentes',
+                 x_label="Condição metereológica",
+                 y_label="Quantidade de acidentes",
                  horizontal=True)
