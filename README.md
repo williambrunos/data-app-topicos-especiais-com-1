@@ -1,4 +1,4 @@
-# Data App - Tópicos especiais em computação 1
+# Data App - Tópicos Especiais em Computação I | UFC 2024.1
 
 Este projeto é destinado a análise dos dados do data tran de 2024.
 
@@ -14,28 +14,30 @@ Este projeto é destinado a análise dos dados do data tran de 2024.
 
 ## Como executar o projeto localmente
 
+Certifique-se de que o python 3.10 ou superior está instalado em sua máquina.
+
 ### Clone do projeto
 
 Primeiramente, realize o clone do projeto:
 
-````Bash
+```Bash
 git clone https://github.com/williambrunos/data-app-topicos-especiais-com-1.git
-````
+```
 
 ### Inicialização do ambiente virtual do python
 
-````Bash
+```Bash
 python -m venv venv
-````
+```
 
 ### Instalação das dependências
 
-````Bash
+```Bash
 pip install -r requirements.txt
-````
+```
 
 ### Inicialização da aplicação
 
-````Bash
+```Bash
 streamlit run Home.py
-````
+```
