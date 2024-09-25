@@ -6,6 +6,8 @@ O dataset utilizado foi o de [Acidentes 2024 (Agrupados por ocorrência)](https:
 
 Além disso, foi elaborado um Jupyter Notebook para a [análise exploratória dos dados](https://colab.research.google.com/drive/1s5Xt1rJYR8Pt-g9hPRmP453kHKxvxXb8?usp=sharing), este notebook também está [disponível neste repositório](./Notebook.ipynb).
 
+Foi feito o [deploy deste data app](https://datatran-data-app.streamlit.app) na plataforma do Streamlit.
+
 ## Equipe
 
 1. Gabriel Vasconcelos Santos - 497688
