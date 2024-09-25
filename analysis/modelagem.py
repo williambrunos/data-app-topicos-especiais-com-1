@@ -7,6 +7,10 @@ def plot_modelagem(dados):
     dados_acuracia = pd.read_csv('./data/models_accuracy.csv')
     dados_feature_importance = pd.read_csv('./data/feature_importance.csv')
 
+    st.write("Realizamos um trabalho de predição utilizando variáveis como classificação do acidente, tipo de pista e a quantidade de feridos graves. No processo, identificamos colunas que tinham uma relação direta com a variável a ser predita, como a quantidade total de feridos e a quantidade de feridos leves, o que poderia causar vazamento de dados.")
+    
+    st.write("Essas colunas foram removidas para evitar que o modelo 'aprendesse' respostas que já estavam implícitas nos dados. Também realizamos testes com vários algoritmos de machine learning e analisamos a importância das features, garantindo que as variáveis mais relevantes fossem devidamente consideradas nas previsões.")
+
     st.write("## Predição da classificação do acidente")
 
     dados_acuracia_classificacao_acidente = dados_acuracia[dados_acuracia['prediction_feature'] == 'classificacao_acidente']
