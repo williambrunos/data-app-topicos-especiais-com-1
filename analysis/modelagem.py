@@ -15,7 +15,7 @@ def plot_modelagem(dados):
     dados_classificacao_acidente = dados_feature_importance[dados_feature_importance['prediction_feature'] == 'classificacao_acidente']
     plot_feature_importance(dados_classificacao_acidente, 'Classificação do Acidente')
 
-    st.write("## Predição da quantidade de feridos")
+    st.write("## Predição da quantidade de feridos gravemente")
 
     dados_acuracia_feridos_graves = dados_acuracia[dados_acuracia['prediction_feature'] == 'feridos_graves']
     st.bar_chart(dados_acuracia_feridos_graves, x='model', y='accuracy', horizontal=False, x_label="Acurácia", y_label="Modelo")
